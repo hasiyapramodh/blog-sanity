@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='flex justify-between items-center h-20 w-full mx-auto px-4 text-lg  text-blue-500   shadow-md shadow-black-100 fixed'>
+    <div className='flex justify-between items-center h-20 w-full mx-auto px-4 text-lg  text-blue-500   shadow-md shadow-black-100 sticky mb-4'>
       <h1 className=' font-monow-full text-xl font-bold text-[#00df9a]'>WEB DEVELOPMENT</h1>
       <ul className='hidden md:flex'>
         <Link href="/" className='p-4'>HOME</Link>
