@@ -32,14 +32,14 @@ export default async function BlogArticle({
                 <span className='block text-base text-center text-primary'></span>
                 <span className='mt-2 block text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl'>{data.title}</span>
             </h1>
-            <div className='m-auto'>
+            <div className='flex justify-center'>
                 <Image
                     src={urlFor(data.titleImage).url()}
                     width={800}
                     height={800}
                     alt='Title Image'
                     priority
-                    className='rounded-lg mt-8 border'
+                    className='rounded-lg mt-8 border '
 
                 />
             </div>

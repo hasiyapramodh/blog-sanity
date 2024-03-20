@@ -7,7 +7,7 @@ import Image2 from '../images/img2.png'
 function page() {
     return (
         <>
-            <div className='flex max-md:block max-md:w-full mt-8 max-md:mb-5 max-md:m-auto'>
+            <div className='flex max-md:block max-md:w-full mt-8 max-md:mb-5 max-md:justify-center'>
                 <div className='w-1/6 ml-3 '>
                     <Image
                         src={Image1}
