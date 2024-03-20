@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { client, urlFor } from "./lib/sanity";
 import { simpleBlogCard } from "./lib/interfaces";
-import { Card, CardContent,Button } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button"
 import { Link } from "lucide-react";
 import Hero from "@/components/Hero/page";
 
@@ -19,6 +20,9 @@ async function getdata(){
   return data
   
 }
+
+
+
 export default async function Home() {
 
   const data:simpleBlogCard[] = await getdata()
@@ -27,7 +31,7 @@ export default async function Home() {
    <>
 
    <Hero/>
-   <div className="grid grid-cols-1 lg:grid-cols-4 mt-4 gap-5">
+   <div className="grid grid-cols-1 lg:grid-cols-4 mt-4 gap-10 ml-10 ">
     {data.map((post,idx)=>(
       <Card key={idx}>
         <Image
@@ -40,11 +44,9 @@ export default async function Home() {
          <CardContent className="mt-5">
           <h3 className="text-lg line-clamp-2">{post.title}</h3>
           <p className="line-clamp-3 text-sm mt-2 text-gray-600 ">{post.smallDescription}</p>
-          <button  className="w-full mt-5"> 
-            <Link href={`/blog/${post.currentSlug}`}>
-              readmore
-               </Link>
-          </button>
+          <Button asChild className="w-full mt-7"> 
+            <Link href={`/blog/${post.currentSlug}`}>Read More</Link>
+          </Button>
          </CardContent>
       </Card>
     ))}

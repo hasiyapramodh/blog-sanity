@@ -38,7 +38,7 @@ const Footer = () => {
           target="blank"
           className="hover:text-white font-semibold duration-200"
         >
-          @reactjsBD
+          @H&Y
         </Link>
       </p>
     </Container>
