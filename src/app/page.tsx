@@ -3,6 +3,7 @@ import { client, urlFor } from "./lib/sanity";
 import { simpleBlogCard } from "./lib/interfaces";
 import { Card, CardContent,Button } from "@/components/ui/card";
 import { Link } from "lucide-react";
+import Hero from "@/components/Hero/page";
 
 
 
@@ -25,7 +26,7 @@ export default async function Home() {
   return (
    <>
 
-   
+   <Hero/>
    <div className="grid grid-cols-1 lg:grid-cols-4 mt-4 gap-5">
     {data.map((post,idx)=>(
       <Card key={idx}>
