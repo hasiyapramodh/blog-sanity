@@ -1,4 +1,3 @@
-import React from "react";
 import { useForm } from "react-hook-form";
 
 interface ContactFormData {
@@ -8,7 +7,7 @@ interface ContactFormData {
   "project details": string;
 }
 
-export default function ContactForm(): React.FC<{}> {
+export default function ContactForm(): JSX.Element{
   const {
     register,
     handleSubmit,
