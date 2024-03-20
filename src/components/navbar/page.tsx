@@ -5,10 +5,10 @@ import {FiMenu} from 'react-icons/fi'
 
 const Navbar = () => {
     const navigation = [
-        {title:"Home", href:"/home"},
+        {title:"Home", href:"/"},
         {title:"Features", href:"/features"},
         {title:"About me", href:"/about"},
-        {title:"Studio", href:"/studio"},
+        {title:"Conatct me", href:"/contact"},
     ]
     return(
 
@@ -31,7 +31,9 @@ const Navbar = () => {
                 ))}
               </div>
                <div className='md:hidden'>
-                <FiMenu className='text-2xl'></FiMenu>
+                <FiMenu className='text-2xl'>
+                    <h2></h2>
+                </FiMenu>
                </div>
             </div>
         </div>
