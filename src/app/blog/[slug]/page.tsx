@@ -1,5 +1,8 @@
 import {client} from '@/app/lib/sanity'
 
+export const revalidate = 0;
+export const dynamic = 'force-dynamic'
+
 async function getData(slug:string) {
     const query = `
     *[_type == "blog" && slug.current == '${slug}']{
@@ -11,7 +14,7 @@ async function getData(slug:string) {
        return data
 }
 
-export default function BlogArticle({
+export default async function BlogArticle({
     params,
 }:{
     params:{slug:string}
