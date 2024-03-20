@@ -6,7 +6,7 @@ import { BsFacebook, BsYoutube, BsInstagram, BsGithub } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <Container className="p-10 bg-black text-gray-100 flex items-center justify-between">
+    <div className="p-10 bg-black text-gray-100 flex items-center justify-between mt-10">
       <Logo title="Bloggers" className="text-white" />
       <div className="text-gray-300 hidden md:inline-flex items-center gap-7">
         <Link
@@ -41,7 +41,7 @@ const Footer = () => {
           @H&Y
         </Link>
       </p>
-    </Container>
+    </div>
   );
 };
 

@@ -3,10 +3,13 @@ import { client, urlFor } from "./lib/sanity";
 import { simpleBlogCard } from "./lib/interfaces";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button"
-import { Link } from "lucide-react";
+import Link from "next/link";
 import Hero from "@/components/Hero/page";
+import Banner from "@/components/Banner/page";
+import Aboutme from '../components/s-about/page'
+import Potogroup from '../components/photos-group/page'
 
-
+export const revalidate = 0;
 
 async function getdata(){
   const query =`*[_type == 'blog'] | order(_createdAt desc){
@@ -49,8 +52,13 @@ export default async function Home() {
           </Button>
          </CardContent>
       </Card>
+
     ))}
    </div>
+
+<Banner/>
+<Aboutme/>
+<Potogroup/>
    </>
   );
 }

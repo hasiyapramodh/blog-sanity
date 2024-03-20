@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Banner from '../../../public/nature-4176575_1280.jpg'
+import Banner from '../../../public/pexels-marek-piwnicki-17366116.jpg'
 
 const Hero =()=>{
     return(
