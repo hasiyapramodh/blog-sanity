@@ -16,9 +16,9 @@ function page() {
                      />
                 </div>
                 <div className='w-1/2 max-md:m-auto'>
-                    <h6 className='mb-3 text-orange-600'>About Me</h6>
-                    <h1 className='mb-3 text-2xl font-bold'>THANKS FOR LOOKING!</h1>
-                    <p className='leading-8 pr-6 '>
+                    <h6 className='mb-3 text-orange-600 font-head'>About Me</h6>
+                    <h1 className='mb-3 text-2xl font-bold font-head'>THANKS FOR LOOKING!</h1>
+                    <p className='leading-8 mr-8 font-text   '>
                         I'm Yapa Gunawardana, the travel blogger behind this website. I'm an American who's been traveling the world full time for 8 years now.
 
                         I started this travel blog in 2024 to document my own international trips and help others learn how to travel the world on a budget.

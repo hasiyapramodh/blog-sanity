@@ -18,7 +18,7 @@ const Navbar = () => {
     return (
 
         <>
-            <div className='w-full bg-white/70 h-16 shadow-md sticky top-0 backdrop-blur-2xl transition-colors z-50'>
+            <div className='w-full bg-white/70 h-16 shadow-md sticky top-0 backdrop-blur-2xl transition-colors z-50 font-head'>
                 <div className='max-w-screen-xl mx-auto flex items-center justify-between px-4 lg:px-0 h-full'>
                     <Logo title='Bloggers' className='text-black'></Logo>
                     <div className='hidden md:inline-flex items-center gap-7 text-gray-900 hover:text-black duration-200'>

@@ -31,7 +31,7 @@ const Footer = () => {
           <BsInstagram className="text-2xl hover:text-orange-500 duration-200 cursor-pointer" />
         </Link>
       </div>
-      <p className="text-sm text-gray-300">
+      <p className="text-sm text-gray-300 max-md:hidden">
         © All rights reserved{" "}
         <Link
           href={""}

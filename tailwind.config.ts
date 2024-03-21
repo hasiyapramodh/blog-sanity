@@ -73,6 +73,10 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
+    fontFamily:{
+      head:["Kaisei Tokumin"],
+      text:["Plus Jakarta Sans"],
+    },
   },
   plugins: [require("tailwindcss-animate"),require('@tailwindcss/typography'),],
 } satisfies Config

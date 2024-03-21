@@ -30,7 +30,7 @@ export default async function BlogArticle({
         <div className='mt-6'>
             <h1>
                 <span className='block text-base text-center text-primary'></span>
-                <span className='mt-2 block text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl'>{data.title}</span>
+                <span className='mt-2 block text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl font-head'>{data.title}</span>
             </h1>
             <div className='flex justify-center'>
                 <Image
@@ -45,7 +45,7 @@ export default async function BlogArticle({
             </div>
 
 
-            <div className='m-auto  mt-16 prose prose-lg prose-li:marker:text-blue-500 prose-a:text-blue-700'>
+            <div className='m-auto  mt-16 prose prose-lg prose-li:marker:text-blue-500 prose-a:text-blue-700 font-title max-md:pl-4 max-md:pr-4'>
                 <PortableText value={data.content} />
             </div>
 
