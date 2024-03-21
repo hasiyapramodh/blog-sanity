@@ -7,8 +7,8 @@ import { BsFacebook, BsYoutube, BsInstagram, BsGithub } from "react-icons/bs";
 const Footer = () => {
   return (
     <div className="p-10 bg-black text-gray-100 flex items-center justify-between mt-10">
-      <Logo title="Bloggers" className="text-white" />
-      <div className="text-gray-300 hidden md:inline-flex items-center gap-7">
+      <Logo title="Bloggers" className="text-white max-md:text-base max-md:mr-3 max-md:hover:text-orange-300" />
+      <div className="text-gray-300  md:inline-flex items-center gap-7 max-md:inline-flex">
         <Link
           href={""}
           target="blank"

@@ -78,7 +78,7 @@ const config = {
       text:["Plus Jakarta Sans"],
     },
   },
-  plugins: [require("tailwindcss-animate"),require('@tailwindcss/typography'),],
+  plugins: [require("tailwindcss-animate"),require('@tailwindcss/typography'),require("tw-elements/plugin.cjs")],
 } satisfies Config
 
 export default config

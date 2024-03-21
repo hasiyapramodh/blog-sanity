@@ -11,7 +11,10 @@ async function getData(slug: string) {
     const query = `
     *[_type == "blog" && slug.current == '${slug}']{
         "currentSlug":slug.current,
-          title,content,titleImage
+          title,content,titleImage,Date,descriptionImage1,descriptionImage2,
+          descriptionImage3,descriptionImage4
+
+
        }[0]`
 
     const data = await client.fetch(query)
@@ -32,7 +35,7 @@ export default async function BlogArticle({
                 <span className='block text-base text-center text-primary'></span>
                 <span className='mt-2 block text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl font-head'>{data.title}</span>
             </h1>
-            <div className='flex justify-center'>
+            <div className='flex justify-center max-md:ml-3'>
                 <Image
                     src={urlFor(data.titleImage).url()}
                     width={800}
@@ -46,10 +49,19 @@ export default async function BlogArticle({
 
 
             <div className='m-auto  mt-16 prose prose-lg prose-li:marker:text-blue-500 prose-a:text-blue-700 font-title max-md:pl-4 max-md:pr-4'>
+               
                 <PortableText value={data.content} />
             </div>
 
+            {/* <Image
+                    src={urlFor(data.descriptionImage1).url()}
+                    width={800}
+                    height={800}
+                    alt='desc Image'
+                    priority
+                    className='rounded-lg mt-8 border '
 
+                /> */}
 
 
         </div>

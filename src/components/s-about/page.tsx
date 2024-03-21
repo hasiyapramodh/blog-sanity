@@ -6,20 +6,20 @@ function page() {
     return (
         <>
             <div className='flex max-md:block max-md:mb-5 '>
-                <div className='w-1/2 max-md:mb-5'>
+                <div className='w-1/2 max-md:mb-5 max-md:w-full'>
                      <Image
                       src={image1}
                       height={800}
                       width={800}
                       alt='small-description-image'
-                      className='h-80 w-90 pl-20 max-md:w-full'
+                      className='h-80 w-90 md:pl-20 object-cover  '
                      />
                 </div>
-                <div className='w-1/2 max-md:m-auto'>
-                    <h6 className='mb-3 text-orange-600 font-head'>About Me</h6>
+                <div className='w-1/2 max-md:pl-4 max-md:w-full max-md:pr-4 '>
+                    <h6 className='mb-3 text-orange-600 font-head max-md:text-center'>About Me</h6>
                     <h1 className='mb-3 text-2xl font-bold font-head'>THANKS FOR LOOKING!</h1>
-                    <p className='leading-8 mr-8 font-text   '>
-                        I'm Yapa Gunawardana, the travel blogger behind this website. I'm an American who's been traveling the world full time for 8 years now.
+                    <p className='leading-8  font-text max-md:text-center  '>
+                        I'm Yapa Gunawardana, the travel blogger behind this website. I'm an SriLankan who's been traveling the world full time for 8 years now.
 
                         I started this travel blog in 2024 to document my own international trips and help others learn how to travel the world on a budget.
 
