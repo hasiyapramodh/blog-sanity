@@ -8,10 +8,22 @@ import Hero from "@/components/Hero/page";
 import Banner from "@/components/Banner/page";
 import Aboutme from '../components/s-about/page'
 import Potogroup from '../components/photos-group/page'
-import Curosel from '../app/curosel/page'
+import Carousel from '../app/curosel/page'
 
 
 export const revalidate = 0;
+
+
+const slides = [
+  
+  "./7.jpg",
+  "./7.jpg",
+  "./7.jpg",
+  "./7.jpg",
+  "./7.jpg",
+  
+]
+
 
 async function getdata(){
   const query =`*[_type == 'blog'] | order(_createdAt desc){
@@ -36,8 +48,17 @@ export default async function Home() {
   console.log(data)
   return (
    <>
-<Curosel/>
-   <Hero/>
+   <div className="h-2/5 mb-8">
+   <Carousel  autoSlide={true}  >
+          {[...slides.map((s) => (
+            <img src={s} 
+            className="block  "
+            />
+          ))]}
+        </Carousel>
+   </div>
+ 
+   {/* <Hero/> */}
    <div className="grid grid-cols-1 lg:grid-cols-4 mt-4 gap-10 pl-5 pr-5  ">
     {data.map((post,idx)=>(
       <Card key={idx}>

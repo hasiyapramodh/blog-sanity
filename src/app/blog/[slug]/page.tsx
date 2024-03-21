@@ -53,15 +53,7 @@ export default async function BlogArticle({
                 <PortableText value={data.content} />
             </div>
 
-            {/* <Image
-                    src={urlFor(data.descriptionImage1).url()}
-                    width={800}
-                    height={800}
-                    alt='desc Image'
-                    priority
-                    className='rounded-lg mt-8 border '
-
-                /> */}
+            
 
 
         </div>
