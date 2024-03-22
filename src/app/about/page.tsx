@@ -10,7 +10,7 @@ function page() {
                 <Image
                     src={Image2}
                     alt=''
-                    className='h-2/4 object-cover '
+                    className='h-2/4 object-cover hover:brightness-125 hover:rounded-full '
                 />
 
                 <h2 className='text-center mt-8 font-head md:text-5xl font-bold'>HOW EVERYTHING STARTRED</h2>
@@ -31,7 +31,7 @@ function page() {
                         <Image
                             src={Image4}
                             alt=''
-                            className='max-md:block max-md:w-full'
+                            className='max-md:block max-md:w-full hover:rounded-full hover:brightness-150'
                         />
                     </div>
                     <div className=' max-md:p-0 ml-8 hover:cursor-pointer max-md:block max-md:w-full '>
