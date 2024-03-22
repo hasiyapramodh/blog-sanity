@@ -50,13 +50,13 @@ function Navbar() {
                     </div>
                     <div className='md:hidden'> {/* Only show on mobile devices */}
                         <button className='' onClick={() => setNavbarOpen(!navbarOpen)}>
-                            {navbarOpen ? <FiMenu className='text-4xl text-red-800' /> : <FiMenu className='text-2xl' />}
+                            {navbarOpen ? <FiMenu className='text-4xl text-red-800' /> : <FiMenu className='text-2xl ' />}
                         </button>
                     </div>
 
                     {/* Mobile Navigation Menu (with styles) */}
-                    <div className={`fixed top-0 left-0 h-[12rem] w-full bg-gray-300  z-50 transition-all duration-300 ease-in-out ${navbarOpen ? 'flex flex-col justify-center items-center' : 'hidden'}`}>
-                        <ul className='text-black text-xl list-none gap-y-5 px-4 absolute left-0 top-12 font-head '>  {/* Added padding for better look */}
+                    <div className={`fixed top-0 left-0 h-[10.5rem] w-full bg-gray-300  z-50 transition-all duration-300 ease-in-out ${navbarOpen ? 'flex flex-col justify-center items-center' : 'hidden'}`}>
+                        <ul className='text-black text-xl list-none gap-y-5 px-4 absolute left-0 top-12 font-text leading-7 '>  {/* Added padding for better look */}
                             {navigation.map((item) => (
                                 <li key={item.title} className='font-text'>
                                     <Link href={item.href} className='hover:text-blue-500'>
@@ -72,7 +72,7 @@ function Navbar() {
                             <Image
                            src={logo}
                             alt=''
-                            className=' ml-8 h-[9rem] w-[15rem]'
+                            className=' ml-[5rem] h-[9rem] w-[15rem] mt-8 hover:brightness-125 hover:translate-x-4 hover:translate-y-4 hover:cursor-pointer'
                             />
                         </h1>
                     </div>
