@@ -11,8 +11,7 @@ async function getData(slug: string) {
     const query = `
     *[_type == "blog" && slug.current == '${slug}']{
         "currentSlug":slug.current,
-          title,content,titleImage,Date,descriptionImage1,descriptionImage2,
-          descriptionImage3,descriptionImage4
+          title,content,titleImage,Date,
 
 
        }[0]`
@@ -35,16 +34,20 @@ export default async function BlogArticle({
                 <span className='block text-base text-center text-primary'></span>
                 <span className='mt-2 block text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl font-head'>{data.title}</span>
             </h1>
-            <div className='flex justify-center max-md:ml-3'>
+            <div className='flex justify-center max-md:ml-3 '>
                 <Image
                     src={urlFor(data.titleImage).url()}
                     width={800}
                     height={800}
                     alt='Title Image'
                     priority
-                    className='rounded-lg mt-8 border '
+                    className='rounded-lg mt-8 border hover:scale-75  hover:contrast-150 hover:brightness-150 '
+
+                   
 
                 />
+
+            
             </div>
 
 

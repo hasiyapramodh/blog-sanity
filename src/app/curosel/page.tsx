@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight } from "react-feather"
 
 
 
-const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 15000 }) => {
+const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 10000 }) => {
   const [curr, setCurr] = useState(0)
 
   const prev = () => setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1))
@@ -21,7 +21,7 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 150
 
   return (
     <div className='overflow-hidden relative '>
-      <div className='flex transition-transform ease-out duration-500 w-140 relative' style={{ transform: `translateX(-${curr * 100}%)` }}>
+      <div className='flex transition-transform ease-out duration-300 w-140 relative' style={{ transform: `translateX(-${curr * 100}%)` }}>
         {slides}
 
       </div>
@@ -41,8 +41,8 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 150
           ))}
         </div>
       </div>
-      <div className=''>
-      <p className=' absolute font-bold md:text-8xl top-1/2   text-white font-head left-1/4'>HELLO I'M YAPA  </p>
+      <div className=' '>
+      <p className=' absolute font-bold md:text-8xl top-1/2 left-1/4   text-white font-head  hover:text-red-200 hover:cursor-pointer '>HELLO I AM HASITHA  </p>
       </div>
      
       

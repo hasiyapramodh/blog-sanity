@@ -5,19 +5,19 @@ import image1 from '../../../public/pexels-devon-daniel-4566581.jpg'
 function page() {
     return (
         <>
-            <div className='flex max-md:block max-md:mb-5 '>
-                <div className='w-1/2 max-md:mb-5 max-md:w-full'>
+            <div className='flex max-md:block max-md:mb-5  '>
+                <div className='w-1/2 max-md:mb-5 max-md:w-full hover:cursor-pointer hover:shadow-sm md:mr-20 md:ml-20'>
                      <Image
                       src={image1}
                       height={800}
                       width={800}
                       alt='small-description-image'
-                      className='h-80 w-90 md:pl-20 object-cover  '
+                      className='h-80 w-full  object-cover hover:brightness-125   '
                      />
                 </div>
-                <div className='w-1/2 max-md:pl-4 max-md:w-full max-md:pr-4 '>
-                    <h6 className='mb-3 text-orange-600 font-head max-md:text-center'>About Me</h6>
-                    <h1 className='mb-3 text-2xl font-bold font-head'>THANKS FOR LOOKING!</h1>
+                <div className='w-1/2 max-md:pl-4 max-md:w-full max-md:pr-4  hover:cursor-pointer hover:shadow-sm'>
+                    <h6 className='mb-3 text-orange-600 font-head max-md:text-center text-center'>About Me</h6>
+                    <h1 className='mb-3 text-2xl font-bold font-head text-center'>THANKS FOR LOOKING!</h1>
                     <p className='leading-8  font-text max-md:text-center  '>
                         I'm Yapa Gunawardana, the travel blogger behind this website. I'm an SriLankan who's been traveling the world full time for 8 years now.
 
