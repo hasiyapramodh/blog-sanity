@@ -108,7 +108,7 @@ export default async function Home() {
       <Aboutme />
       <Potogroup  />
 
-      <Link href='/about'>about</Link>
+      <Link href='/carrier'>about</Link>
     </>
   );
 }

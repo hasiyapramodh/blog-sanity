@@ -16,7 +16,7 @@ function Navbar() {
     const [navbar, setnavbar] = useState(false)
     const navigation = [
         { title: "Home", href: "/" },
-        { title: "Features", href: "/features" },
+        { title: "Features", href: "/" },
         { title: "About me", href: "/about" },
         { title: "Conatct me", href: "/contact" },
     ]
@@ -50,13 +50,13 @@ function Navbar() {
                     </div>
                     <div className='md:hidden'> {/* Only show on mobile devices */}
                         <button className='' onClick={() => setNavbarOpen(!navbarOpen)}>
-                            {navbarOpen ? <FiMenu className='text-2xl' /> : <FiMenu className='text-2xl' />}
+                            {navbarOpen ? <FiMenu className='text-4xl text-red-800' /> : <FiMenu className='text-2xl' />}
                         </button>
                     </div>
 
                     {/* Mobile Navigation Menu (with styles) */}
-                    <div className={`fixed top-0 left-0 h-60 w-full bg-gray-900 opacity-65 z-50 transition-all duration-300 ease-in-out ${navbarOpen ? 'flex flex-col justify-center items-center' : 'hidden'}`}>
-                        <ul className='text-white text-xl list-none gap-y-5 px-4 absolute left-0 top-13 font-text'>  {/* Added padding for better look */}
+                    <div className={`fixed top-0 left-0 h-[12rem] w-full bg-gray-300  z-50 transition-all duration-300 ease-in-out ${navbarOpen ? 'flex flex-col justify-center items-center' : 'hidden'}`}>
+                        <ul className='text-black text-xl list-none gap-y-5 px-4 absolute left-0 top-12 font-head '>  {/* Added padding for better look */}
                             {navigation.map((item) => (
                                 <li key={item.title} className='font-text'>
                                     <Link href={item.href} className='hover:text-blue-500'>
@@ -68,6 +68,13 @@ function Navbar() {
                         <button className='absolute top-4 right-4 text-white hover:text-blue-500' onClick={() => setNavbarOpen(false)}>
                             <FiMenu className='text-2xl' />  {/* Consistent menu icon */}
                         </button>
+                        <h1>
+                            <Image
+                           src={logo}
+                            alt=''
+                            className=' ml-8 h-[9rem] w-[15rem]'
+                            />
+                        </h1>
                     </div>
 
 
