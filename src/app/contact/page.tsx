@@ -1,9 +1,19 @@
 import React from 'react'
+import Image from 'next/image';
+import Image1 from '../../../public/4.jpg'
 
 function page() {
   return (
    <>
-   <h2>contact</h2>
+   <div className=''>
+    <Image
+    src={Image1}
+    alt=''
+    />
+    <div>
+      <p></p>
+    </div>
+   </div>
    </>
   )
 }
