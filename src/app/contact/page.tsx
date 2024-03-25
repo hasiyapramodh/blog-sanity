@@ -9,7 +9,7 @@ const ContactUs: React.FC = () => {
       <div className="image-container flex pl-10 pr-10">
         <div className="w-1/3 max-md:hidden max-md:w-full">
           <Image
-            src="/Users/indrajithyapa/Desktop/blog/Untitled/blog-sanity/public/img.jpg" // Replace with your actual image path
+            src={Image1} // Replace with your actual image path
             alt="Contact Us"
             width={400} // Set the image width (replace with actual width)
             height={300} // Optional: Set height if needed
